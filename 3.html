@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Switcher</title>
+  </head>
+  <body>
+    <p>Please Wait a few seconds to let the image load...</p>
+    <br />
+    <button onclick="image1()">Image 1</button>
+    <button onclick="image2()">Image 2</button><br />
+    <img id="image" src="" alt="" width="600px" />
+    <script>
+      function image1() {
+        let image = document.getElementById("image");
+        image.src = "imgs/image1.jpg";
+      }
+
+      function image2() {
+        let image = document.getElementById("image");
+        image.src = "imgs/image2.jpg";
+      }
+    </script>
+  </body>
+</html>
